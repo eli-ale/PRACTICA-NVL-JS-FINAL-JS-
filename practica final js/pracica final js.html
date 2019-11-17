@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Generador de formularios</title>
+	<link rel="stylesheet" type="text/css" href="practica final js style.css">
+	<script type="text/javascript" src = "practica final js main.js"></script>
+</head>
+<body>
+	<h1>Generador de formularios</h1>
+	<form id = generador>
+		<h2 for = "tipo">elige un elemento</h2></br>
+		<div id="selecciona_el_tipo">
+			<input name="tipo"type ="radio"value="texto"id="tipo texto"checked="checked">
+			
+			<label for="tipo_texto">texto</label></br>
+            <input name="tipo"type="radio"value="Numero"id="tipo_numero">
+
+			<label for="tipo-numero">Número</label><br/>
+			<input name="tipo" type="radio" value="email" id="tipo-email">
+
+			<label for="tipo-email">Email</label><br/>
+			<input name="tipo" type="radio" value="lista" id="tipo-lista">
+
+			<label for="tipo-lista">Lista de selección</label><br/>
+
+			<input name="tipo" type="radio" value="opc_no_exclusiva" id="tipo-opc_no_exclusiva">
+			<label for="tipo-opc_no_exc">Opciones no exclusivas de selección</label><br/>
+
+			<input name="tipo" type="radio" value="opc_exclusivas_selec"id="tipo_opciones_no_exclusivas">
+			<label for="tipo_opciones_exclusivas">Opciones exclusivas de seleccion</label>
+
+		</div>
+		<div>
+			<input id="boton_crear" type="button" value="Crear Elemento" onclick="crea_elemento(tipo.value)">
+		</div>
+		<input id="boton_enviar" type="button" value="Añadir botón de envío" onclick="nuevo_boton()">
+		</div>
+
+
+
+
+
+
+
+<h4>FORMULARIO DE CONTACTO PARA CUALQUIER CONSULTA</h4><br>
+
+<table border>
+            	<form method="post" action="miservidor.php">
+            		<div>
+            			<label for="nombre">Nombre</label><br>
+            			<input id="nombre" type="text">
+            		</div>
+            		<div>
+            			<label for="ape1">Primer apellido</label><br>
+            			<input id="ape1"type="text">
+            		</div>
+
+    <div>
+      <label for=”C.P”>Codigo postal:  </label><br>
+      <input id=”C.P” type=”text”>
+    </div>
+    <div>
+      <label for=”mail”>Direccion de correo electronico: </label><br>
+      <input id=”mail” type=”text”>
+    </div>
+      <div>
+      <label for=”SATISFACCION”>Satisfacción sobre el producto. </label><br>  
+      <select id=”SATISFACCION”>
+        <option value=”Excelente”>Excelente</option>
+        <option value=”Bueno”>Bueno</option>
+        <option value=”Regular”>Regular</option>
+        <option value=”Pésimo”>Pésimo</option>
+        
+      </select>
+  </div>
+ 
+  <div>
+
+      <div>
+    <label for=”comentario”> Dudas o consultas sobre el producto.  </label><br>
+    <textarea id=”comentario”></textarea>
+  </div><br><br>
+  <div>
+    <input id="button1" type="button"  value="Enviar" onclick="nuevo_boton">
+</div>
+</body>
+</html>
